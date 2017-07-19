@@ -9,6 +9,6 @@
 // centuryFromYear(year) = 17.
 
 function centuryFromYear(year) {
-    // divide the yeab by 100 and round the number upward to its nearest integer
+    // divide the year by 100 and round the number upward to its nearest integer
     return Math.ceil(year/100);
 }
