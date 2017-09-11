@@ -1,2 +1,2 @@
 # CodeFights-Algorithms
-Collection of algorithms from codefights.com/
+Collection of algorithms from codefights.com/ Arcade Intro
