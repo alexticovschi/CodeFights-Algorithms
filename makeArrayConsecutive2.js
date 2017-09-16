@@ -7,10 +7,9 @@ function makeArrayConsecutive2(statues) {
       count = 0;
 
   for (var i = min; i < max; i++ ) {
-    if (statues.indexOf(i) === -1) {
+    if (!statues.includes(i)) {
       count++;
     }
   }
-  
   return count;
 }
