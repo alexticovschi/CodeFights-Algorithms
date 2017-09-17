@@ -1,5 +1,4 @@
 function commonCharacterCount(s1, s2) {
-  
   let count = 0,
       arr1 = [],
       arr2 = [],
