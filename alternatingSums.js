@@ -1,26 +1,9 @@
 function alternatingSums(a) {
-    let team1 = [], team2 = [], arr = [], onePerson = [];
-    
-    function getSum(total, num) {
-        return total + num;
-    }
+    let team1 = 0, team2 = 0;
     if(a.length !== 1) {
-        for(var i = 0; i < a.length; i++) {
-          if (i % 2 === 0) {
-              team2.push(a[i]);
-          } else {
-              team1.push(a[i]);
-          }
-        }
-        team1 = team1.reduce(getSum);
-        team2 = team2.reduce(getSum);
-        arr.push(team2);
-        arr.push(team1);
-                
-        return arr;
+        a.map((num, index) => (index % 2 === 0) ? team1 += a[index]: team2 += a[index]);
+        return [team1, team2];
     } else {
-        onePerson = a;
-        onePerson.push(0);
-        return onePerson;
-    } 
+        return [a[0], team2];
+    }
 }
