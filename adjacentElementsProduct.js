@@ -5,6 +5,13 @@
 //   7 and 3 produce the largest product.
 
 function adjacentElementsProduct(inputArray) {
+    // FIRST SOLUTION
+    //let arr = [];
+    //for (let i = 0; i < inputArray.length; i++) {
+    //    arr.push(inputArray[i] * inputArray[i + 1]);
+    //}
+    //arr.sort((a,b) => b > a);
+    //return arr[0];
     
     //SECOND SOLUTION
     // var newArr = inputArray.map((num, index) => num * inputArray[index + 1]).slice(0, inputArray.length - 1);  
