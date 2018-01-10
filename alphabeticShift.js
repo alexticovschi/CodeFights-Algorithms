@@ -20,7 +20,7 @@
 
 function alphabeticShift(inputString) {
     ascii_code = [];
-    for(let i = 0; i < inputString.length; i++) ascii_code.push(inputString[i].charCodeAt(0));
+    for(let char in inputString) ascii_code.push(inputString[char].charCodeAt(0));
     
     return ascii_code.map(code => code == 122 ? code = 97 : code + 1 )
                      .map(code => String.fromCharCode(code)).join('');
